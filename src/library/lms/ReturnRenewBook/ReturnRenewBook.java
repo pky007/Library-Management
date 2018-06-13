@@ -208,7 +208,7 @@ public class ReturnRenewBook extends javax.swing.JFrame {
 
                 rsc.next();
                 dm.addElement("BookName : " + rsc.getString("bookName"));
-                dm.addElement("BookName : " + rsc.getString("author"));
+                dm.addElement("Author : " + rsc.getString("author"));
 
                 ResultSet rscc = dbh.getData("select * from member where id=" + memberId + "");
                 rscc.next();
